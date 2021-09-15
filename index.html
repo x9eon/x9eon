@@ -4,54 +4,87 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learning Bootstrap</title>
+    <title>Navigation Bar</title>
+    <link rel="stylesheet" href="fontawesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="syle.css">
 </head>
 <body>
-    <!-- Colors -->
-    <!-- 
-        blue ----- primary
-        red ----- danger
-        yellow ----- warning
-        green ----- success
-        black ----- dark
-        ash ----- secondary
-        white ----- white
-        faded black ----- muted
-        no color ----- default
+    <nav role="navigation" class="navbar bg-dark navbar-expand-md navbar-dark fixed-top">
+        <a href="nav.html" class="navbar-brand">Portfolio</a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#toggle">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="toggle">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Homepage</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Training</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-    -->
-    <!-- color as text -->
-    <p class="text-primary">How old are you</p>
-    <a href="" class="text-success">Learn more</a>
+    <section class="py-5 bg-light">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-md-6 text-center">
+                    <img src="img/fortnite_1.jfif" alt="fortnite" width="300px" height="300px" class="rounded-circle">
+                    <h4>Timmy</h4>
+                    <p class="text-pink">Fortnite player</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <main>
+        <section class="py-5">
+            <div class="container">
+                <h4 class="text-dark">About Us <i class="fa fa-angle-double-right"></i></h4>
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="img/fornite 2.jfif" alt="Charles" width="100%">
+                    </div>
+                    <div class="col-md-6">
+                        <h3 class="text-dark">Get Better</h3>
+                        <p class="text-muted">You can improve your fortnite gameplay by watching twitch videos and following the X2 twins.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-light py-5">
+            <div class="container">
+                <h4 class="text-dark pt-3 text-right"> <i class="fa fa-angle-double-left"></i>Services</h4>
+                <div class="row justify-content-center">
+                    <div class="col-md-4 p-5 card shadow">
+                        <img src="img/fortnite 5.jfif" alt="HAHA" width="100%">
+                        <div class="shadows py-5 px-5">
+                            <p class="text-dark text-center bg-light">Connect with proffesionals to get mentorship
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 p-5 card shadow">
+                        <img src="img/fortnite 3.jfif" alt="HAHA" width="100%">
+                        <div class="shadows py-5 px-5">
+                            <p class="text-dark text-center bg-light">Train to get better at your gameplay</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 p-5 card shadow">
+                        <img src="/img/fortnite 4.jfif" alt="HAHA" width="100%">
+                        <div class="shadows py-5 px-5">
+                            <p class="text-dark text-center bg-light">Learn different techniques to use in plays</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-    <!-- color as background (bg-color) -->
-    <p class="text-white bg-danger">How old are you</p>
-
-    <!-- color as a button (btn btn-color)-->
-    <a href="learn.html" class="btn btn-info">Homepage</a>
-
-    <!-- alignment 
-        text-left
-        text-right
-        text-center
-        text-justify
-    -->
-    <p class="text-right">Lorem ipsum dolor sit amet consectetur.</p>
-
-    <!-- Spacing -->
-    <!-- Padding 
-        p-3
-        pt-5, pb-3, pl-2, pr-4, px-4, py-5
-    -->
-    <p class="pt-5 pl-3 text-primary">Shalom and Felix</p>
-
-    <!-- website -->
-    <!--
-        section
-           container or container-fluid
-              row
-                  column
-    -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
